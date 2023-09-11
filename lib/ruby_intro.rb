@@ -7,7 +7,7 @@ def sum(arr)
 end
 
 def max_2_sum(arr)
-  # YOUR CODE HERE
+  return arr.sort.last(2).sum
 end
 
 def sum_to_n?(arr, number)
