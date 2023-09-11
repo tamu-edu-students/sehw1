@@ -11,7 +11,17 @@ def max_2_sum(arr)
 end
 
 def sum_to_n?(arr, number)
-  # YOUR CODE HERE
+  present = {}
+
+  arr.each do |num|
+    find_num = number - num
+    if present[find_num]
+      return true
+    end
+    present[num] = true
+  end
+
+  return false
 end
 
 # Part 2
